@@ -6,9 +6,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    newObjectWindow = new Dialog(this);
+    newObjectWindow->setVisible(false);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::abrirJanela(){
+    newObjectWindow->setVisible(true);
 }
