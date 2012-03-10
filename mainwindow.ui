@@ -334,9 +334,31 @@
      <string>CG1</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menuInserir">
+    <property name="title">
+     <string>Inserir</string>
+    </property>
+    <addaction name="actionNovo_Objeto_2"/>
+   </widget>
    <addaction name="menuCG1"/>
+   <addaction name="menuInserir"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNovo_Objeto">
+   <property name="text">
+    <string>Novo Objeto</string>
+   </property>
+  </action>
+  <action name="actionNovo_Objeto_2">
+   <property name="text">
+    <string>Novo Objeto</string>
+   </property>
+  </action>
+  <action name="actionNovo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
@@ -354,6 +376,22 @@
     <hint type="destinationlabel">
      <x>460</x>
      <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menuBar</sender>
+   <signal>activated(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>abrirJanela()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>48</y>
     </hint>
    </hints>
   </connection>
